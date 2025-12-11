@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b95300;
+    height: 70px;
+}
+
+.app-logo {
+    padding: 10px;
+    height: 50px;
+}
+
+.nav-menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+nav {
+    padding: 15px;
+}
