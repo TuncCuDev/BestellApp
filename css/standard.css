@@ -90,3 +90,10 @@ ul li a:hover {
     height: 200px;
     object-fit: cover;
 }
+
+.mainDish {
+    width: 1000px;
+    border: 15px solid #ff9c2d;
+    padding: 17px;
+    margin: 5px;
+}
