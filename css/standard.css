@@ -45,18 +45,12 @@ header {
 .section-top-menu {
     position: absolute;
     bottom: 25px;
-    display: flex;
-    align-items: center;
     background-color: white;
     width: 100%;
 }
 
 .p-review {
     color: orangered;
-}
-
-span {
-    font-size: 20px;
 }
 
 menu {
@@ -66,11 +60,11 @@ menu {
 
 ul {
     display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #dd5002b8;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dd5002b8;
 }
 
 ul li {
@@ -78,14 +72,12 @@ ul li {
 }
 
 ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 ul li a:hover {
-  background-color: #e95d06eb;
+    background-color: #e95d06eb;
 }
 
 .menuList {

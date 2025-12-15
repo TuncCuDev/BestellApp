@@ -1,4 +1,4 @@
-let dishes = {
+let dishes = [
         {
             "name": "Jollof Rice",
             "description": "Westafrikanisches Reisgericht mit Tomaten, Chili und Gewürzen.",
@@ -19,5 +19,4 @@ let dishes = {
             "description": "Japanische Nudelsuppe mit Ei, Gemüse und Hähnchenfleisch.",
             "price": 14.20
         }
-    }
-    
+]
