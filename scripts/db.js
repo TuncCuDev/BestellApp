@@ -18,5 +18,10 @@ let dishes = [
             "name": "Ramen",
             "description": "Japanische Nudelsuppe mit Ei, Gemüse und Hähnchenfleisch.",
             "price": 14.20
+        },
+        {
+            "name": "Falafel",
+            "description": "Kichererbsenbällchen mit Tahini, Hummus und frischem Salat.",
+            "price": 10.80
         }
 ]
