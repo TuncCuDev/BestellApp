@@ -38,8 +38,9 @@ header {
 }
 
 .resteraunt-img{
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 500px;
 }
 
 .section-top-menu {
@@ -85,15 +86,17 @@ ul li a:hover {
     color: red;
 }
 
-.dishes-img{
-    width: 600px;
-    height: 200px;
-    object-fit: cover;
-}
-
 .mainDish {
-    width: 1000px;
+    width: 75%;
     border: 15px solid #ff9c2d;
     padding: 17px;
     margin: 5px;
+}
+
+
+.shopping-card {
+    width: 300px;
+    flex-grow: 1;
+    border: 2px solid grey;
+    padding: 16px;
 }
