@@ -2,12 +2,11 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #b95300;
-    height: 70px;
+    height: 90px;
 }
 
 .app-logo {
     padding: 10px;
-    height: 50px;
 }
 
 .nav-menu {
@@ -87,20 +86,42 @@ ul li a:hover {
 }
 
 .mainDish {
-    width: 75%;
     border: 15px solid #ff9c2d;
     padding: 17px;
     margin: 5px;
 }
 
-
 .shopping-card {
     width: 300px;
     flex-grow: 1;
-    border: 2px solid grey;
     padding: 16px;
 }
 
-.mainPart {
+.centralPart {
     display: flex;
+    padding-bottom: 50px;
+}
+
+#mainDishes {
+    width: calc(100% - 300px);
+}
+
+.basket {
+    width: 100%;
+    height: 400px;
+    position: sticky;
+    top: 0;
+    border: 2px solid gray;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #b95300;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
