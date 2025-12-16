@@ -44,9 +44,10 @@ header {
 
 .section-top-menu {
     position: absolute;
-    bottom: 25px;
+    bottom: 0px;
     background-color: white;
     width: 100%;
+    font-size: 24px;
 }
 
 .p-review {
@@ -140,4 +141,12 @@ footer {
     align-content: center;
     padding: 40px 24px;
     font-weight: bolder;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 20px;
 }
