@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #b95300;
-    height: 90px;
+    height: 100px;
 }
 
 .app-logo {
@@ -17,7 +17,7 @@ header {
 }
 
 .nav {
-    padding: 15px;
+    padding: 30px;
 }
 
 .section-top{
@@ -92,6 +92,7 @@ ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 35px;
 }
 
 .shopping-card {
@@ -118,8 +119,10 @@ ul li a:hover {
 }
 
 footer {
+    font-size: 24px;
+    color: white;
     background-color: #b95300;
-    height: 70px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,10 +136,8 @@ footer {
     font-size: 24px;
     width: 15px;
     display: flex;
-    justify-content: cener;
     justify-content: center;
     align-content: center;
     padding: 40px 24px;
-    justify-content: cemter;
     font-weight: bolder;
 }
