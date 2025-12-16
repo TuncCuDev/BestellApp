@@ -13,7 +13,7 @@
 
 </head>
 <body onload="renderMenu()">
-    <header>
+    <header class="main-header">
         <img class="app-logo" src="./Logo/Bestell App- Logo.svg" alt="">
 
         <nav class="nav">
@@ -45,7 +45,17 @@
 
             <aside class="shopping-card">
             <div class="basket">
-            <h3>Warenkorb</h3><
+                <header class="basket-header"><h3>Warenkorb</h3></header>
+                <section><h4>Bestellung: </h4></section>
+
+                <footer class="basket-footer">
+                    <ul>
+                        <tr><th>Zwischensumme :</th><td> 0,00 €</td></tr>
+                        <tr><th>Lieferkosten :</th><td> 5,00 €</td></tr>
+                        <tr><th>Gesamtsumme :</th><td> 0,00 €</td></tr>
+                    </ul></footer>
+
+            
 
             </div>
         </aside>
@@ -54,7 +64,7 @@
         
     </main>
 
-    <footer>Copyright Riva Ravi Resteraunt </footer>
+    <footer class="main-footer">Copyright Riva Ravi Resteraunt </footer>
         <script src="./scripts/db.js"></script>
     <script src="./scripts/templates.js"></script>
     <script src="./script.js"></script>

@@ -5,5 +5,8 @@ function renderMenu(){
         const dishesItem= dishes[index]
         mainDishesRef.innerHTML += getMainTemplate(dishesItem)
     }
-   
-    }    
+}    
+
+funciton moveToBasket(){
+    let orderDishes = dishes
+}

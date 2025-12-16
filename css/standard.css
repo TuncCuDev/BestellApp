@@ -1,4 +1,4 @@
-header {
+.main-header {
     display: flex;
     justify-content: space-between;
     background-color: #b95300;
@@ -119,7 +119,7 @@ ul li a:hover {
     border: 2px solid gray;
 }
 
-footer {
+.main-footer {
     font-size: 24px;
     color: white;
     background-color: #b95300;

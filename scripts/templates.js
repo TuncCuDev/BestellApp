@@ -5,6 +5,6 @@ function getMainTemplate(dishesItem){
             <p>${dishesItem.description} </p>
             <span>${dishesItem.price.toFixed(2)} € </span>
             </div>
-            <div class="addToBasket">+</div>
+            <div class="addToBasket" onclick="moveToBasket()">+</div>
             </section>`
 }
