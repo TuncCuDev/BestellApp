@@ -6,7 +6,3 @@ function renderMenu(){
         mainDishesRef.innerHTML += getMainTemplate(dishesItem)
     }
 }    
-
-funciton moveToBasket(){
-    let orderDishes = dishes
-}
