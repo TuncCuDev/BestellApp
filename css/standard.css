@@ -85,10 +85,13 @@ ul li a:hover {
     color: red;
 }
 
-.mainDish {
+.dishInfo {
     border: 15px solid #ff9c2d;
     padding: 17px;
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .shopping-card {
@@ -114,14 +117,26 @@ ul li a:hover {
     border: 2px solid gray;
 }
 
-h3 {
-    text-align: center;
-}
-
 footer {
     background-color: #b95300;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.addToBasket {
+    border-radius: 45px;
+    line-height: 1em;
+    box-shadow: 0 0 14px 0 #000000c4;
+    background-color: #ffa483;
+    font-size: 24px;
+    width: 15px;
+    display: flex;
+    justify-content: cener;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 24px;
+    justify-content: cemter;
+    font-weight: bolder;
 }
