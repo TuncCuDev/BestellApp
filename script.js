@@ -4,21 +4,25 @@ function renderMenu(){
     mainDishesRef.innerHTML = "";
 
     for (let index = 0; index < dishes.length; index++) {
-        const dishesItem= dishes[index]
-        mainDishesRef.innerHTML += getMainTemplate(dishesItem);
+        mainDishesRef.innerHTML += getMainTemplate(dishes[index], index);
     }
 }    
 
-function basketOrder (){
-    let basketDishesRef = document.getElementById('basketOrder')
+function renderBasket(){
+    let basketDishesRef = document.getElementById('basketOrder');
     basketDishesRef.innerHTML = "";
 
-    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
-        const basketItem = basket[basketIndex];
-        basketDishesRef += getBasketTemplate(basketItem); 
+    for (let j = 0; j < basket.length; j++) {
+        basketDishesRef.innerHTML += getBasketTemplate(basket[j]);
     }
 }
 
-function moveToBasket(){
-    document.getElementById('basketOrder').innerHTML += getBasketTemplate(basketItem);
+function moveToBasket(index){
+    basket.push({
+        name: dishes[index].name,
+        price: dishes[index].price,
+        amount: 1
+    })
+
+    renderBasket();
 }

@@ -25,3 +25,5 @@ let dishes = [
             "price": 10.80
         }
 ]
+
+let basket = [];
