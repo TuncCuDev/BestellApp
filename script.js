@@ -13,16 +13,31 @@ function renderBasket(){
     basketDishesRef.innerHTML = "";
 
     for (let j = 0; j < basket.length; j++) {
-        basketDishesRef.innerHTML += getBasketTemplate(basket[j]);
+        basketDishesRef.innerHTML += getBasketTemplate(basket[j], j);
     }
 }
 
 function moveToBasket(index){
-    basket.push({
-        name: dishes[index].name,
-        price: dishes[index].price,
-        amount: 1
-    })
+    let dish = dishes[index];
 
+    let sameDish = basket.find(item => item.name === dish.name)
+    // Prüft, ob vorhanden
+
+    if (sameDish){
+        sameDish.amount++;
+    }
+    else {
+        basket.push({
+            name: dish.name,
+            price: dish.price,
+            amount: 1
+        });
+    }
+         renderBasket();
+    }
+
+
+function deleteDish(i){
+    basket.splice(i, 1);
     renderBasket();
 }
