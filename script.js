@@ -21,7 +21,7 @@ function moveToBasket(index){
     let dish = dishes[index];
 
     let sameDish = basket.find(item => item.name === dish.name)
-    // Prüft, ob vorhanden
+    // Prüft, ob das Item vorhanden ist/identisch ist?!
 
     if (sameDish){
         sameDish.amount++;
@@ -36,6 +36,21 @@ function moveToBasket(index){
          renderBasket();
     }
 
+function addToAmount(i){
+    basket[i].amount++;
+    renderBasket();
+}
+
+function removeFromAmount(i){
+
+    if (basket[i].amount > 1){
+    basket[i].amount--;
+    }
+    else {
+        basket.splice(i, 1);
+    }
+    renderBasket();
+}
 
 function deleteDish(i){
     basket.splice(i, 1);

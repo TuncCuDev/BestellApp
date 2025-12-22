@@ -14,11 +14,11 @@ function getBasketTemplate(dish, i){
             <section class="basketInfo">
             <div class="basket-Item-Name"> ${dish.name} </div>
             <div class="basket-amount-counter">
-            <div class="basket-pls-button">+</div>
-            <div class="basket-Item-Amount"> ${dish.amount} </div>
-            <div class="basket-mns-button">-</div>
+            <div class="basket-pls-button" onclick="addToAmount(${i})">+</div>
+            <div class="basket-Item-Amount" id="amountNumber"> ${dish.amount} </div>
+            <div class="basket-mns-button" onclick="removeFromAmount(${i})">-</div>
             </div>
-            <div class="basket-Item-Price"> ${dish.price.toFixed(2)} €</div>
+            <div class="basket-Item-Price" id="amountPrice"> ${(dish.price * dish.amount).toFixed(2)} €</div>
             <img src="./Favicon/mulleimer.png" class="delete-button" onclick="deleteDish(${i})" alt="Delete Button">
             </section>
             </section>` 
