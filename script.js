@@ -15,6 +15,7 @@ function renderBasket(){
     for (let j = 0; j < basket.length; j++) {
         basketDishesRef.innerHTML += getBasketTemplate(basket[j], j);
     }
+    renderPrice()
 }
 
 function moveToBasket(index){
@@ -34,6 +35,7 @@ function moveToBasket(index){
         });
     }
          renderBasket();
+         renderPrice();
     }
 
 function addToAmount(i){
@@ -55,4 +57,17 @@ function removeFromAmount(i){
 function deleteDish(i){
     basket.splice(i, 1);
     renderBasket();
+}
+
+function renderPrice(){
+    let delivery = 5.00 
+    let subTotal = 0.00
+
+    for (let i = 0; i < basket.length; i++) {
+        subTotal += basket[i].price * basket[i].amount
+    }
+
+    document.getElementById('subTotal').innerHTML = subTotal.toFixed(2);
+    document.getElementById('deliveryCost').innerHTML = delivery.toFixed(2);
+    document.getElementById('total').innerHTML = (subTotal + delivery).toFixed(2);
 }
