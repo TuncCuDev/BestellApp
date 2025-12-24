@@ -99,11 +99,20 @@ menu {
     font-weight: bolder;
 }
 
+.addToBasket:hover {
+    background-color: rgb(222, 137, 101);
+    cursor: pointer;
+}
+
 p {
     font-size: 20px;
+    padding-left: 4px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
 }
 
 span {
     font-size: 20px;
+    padding-left: 4px;
 }
 

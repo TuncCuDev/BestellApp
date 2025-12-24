@@ -10,9 +10,9 @@ function getMainTemplate(dish, index){
 }
 
 function getBasketTemplate(dish, i){
-    return `<section class="basketRow">
-            <section class="basketInfo">
-            <div class="basket-Item-Name"> ${dish.name} </div>
+    return `<section class="basketInfo">
+            <div class="basket-Item-Name"><h3> ${dish.name}</h3> </div>
+            <div class="basket-second-line">
             <div class="basket-amount-counter">
             <div class="basket-pls-button" onclick="addToAmount(${i})">+</div>
             <div class="basket-Item-Amount" id="amountNumber"> ${dish.amount} </div>
@@ -20,6 +20,6 @@ function getBasketTemplate(dish, i){
             </div>
             <div class="basket-Item-Price" id="amountPrice"> ${(dish.price * dish.amount).toFixed(2)} €</div>
             <img src="./Favicon/mulleimer.png" class="delete-button" onclick="deleteDish(${i})" alt="Delete Button">
-            </section>
+            </div>
             </section>` 
 }

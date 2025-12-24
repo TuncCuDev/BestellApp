@@ -1,7 +1,5 @@
 .basket-button {
     width: 285px;
-    border: none;
-    color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -10,19 +8,20 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #f78e10;
+    background-color: #b95e00bf;
+    color: #ffffff;
+    border: 2px solid #000000;
 }
 
 .basket-button:hover {
-  background-color: #af6a1a;
-  color: white;
+    background-color: #860000;
+    color: rgb(185, 23, 23);
+    cursor: pointer;
 }
 
 .basket {
     width: 100%;
-    height: 800px;
+    height: 850px;
     position: sticky;
     top: 0;
     border: 2px solid gray;
@@ -35,13 +34,74 @@
 }
 
 .basketInfo{
-    display: flex;
-    justify-content: space-between;
     align-content: center;
-    padding: 15px 0px;
     border-bottom: 1px solid #0000003d;
 }
 
 .delete-button{
     height: 20px;
+}
+
+.delete-button:hover {
+    background-color: rgba(40, 32, 32, 0.477);
+    color: white;
+    cursor: pointer;
+}
+
+.totalPrice {
+    border-top: 5px solid #00000057;
+    font-weight: 600;
+    padding-top: 15px;
+    }
+
+#subTotal {
+    margin-right: 5px;
+}
+
+.basket-amount-counter{
+    display: flex;
+    gap: 10px;
+}
+
+.basket-pls-button, .basket-mns-button {
+    background-color: #836b82;
+    border: none;
+    color: #ffffff;
+    padding: 3px 7px;
+}
+
+.basket-pls-button:hover {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+
+.basket-mns-button:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.basket-second-line {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 10px;
+}
+
+h4 {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #edededf7;
+    padding-left: 4px;
+    margin-block-end: 0;
+}
+
+.basket-header{
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+}
+
+h3 {
+    padding-left: 4px;
 }

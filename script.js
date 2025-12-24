@@ -1,4 +1,3 @@
-
 function renderMenu(){
     let mainDishesRef = document.getElementById('mainDishes');
     mainDishesRef.innerHTML = "";
