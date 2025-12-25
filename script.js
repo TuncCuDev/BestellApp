@@ -14,7 +14,7 @@ function renderBasket(){
     for (let j = 0; j < basket.length; j++) {
         basketDishesRef.innerHTML += getBasketTemplate(basket[j], j);
     }
-    renderPrice()
+    renderPrice();
 }
 
 function moveToBasket(index){
