@@ -23,7 +23,7 @@
     width: 100%;
     height: 850px;
     position: sticky;
-    top: 0;
+    top: 5px;
     border: 2px solid gray;
 }
 
@@ -104,4 +104,23 @@ h4 {
 
 h3 {
     padding-left: 4px;
+}
+
+.resp-button {
+    padding-bottom: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.basket-card-button:hover {
+    background-color: rgb(255, 89, 0);
+    cursor: pointer;
+}
+
+.basket-card-button {
+    border: none;
+    background-color: #ff7c30;
+    width: 30%;
+    padding: 15px;
 }
