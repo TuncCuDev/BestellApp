@@ -35,3 +35,69 @@
 .overlay {
     background-color: #837878cf;
 }
+
+@media (max-width: 900px){
+    .shopping-card{
+        display: none;
+    }
+
+    #mainDishes {
+        width: calc(100% - 25px);
+    }
+}
+
+@media (max-width: 600px){
+    p {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+    .dishInfo{
+        padding: 8px;
+    }
+
+    .addToBasket{
+        padding: 30px 13px;
+    }
+
+    h3{
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    }
+}
+
+@media (max-width: 415px){
+    h3{
+        font-size: 16px;
+    }
+
+    .app-logo{
+        width: 160px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .mainCourses{
+        font-size: 16px;
+    }
+
+    .main-footer{
+        font-size: 16px;
+    }
+
+    .icon-resteraunt{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 900px) {
+    .basket-card-button{
+        display: none;
+    }
+}
