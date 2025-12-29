@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/standard.css">
     <link rel="stylesheet" href="./css/basket.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
   
 
@@ -61,8 +62,29 @@
         </aside>
         </section>
 
-        <section class="resp-button">
-            <button class="basket-card-button"> Warenkorb </button>
+            <section class="resp-button">
+                <button class="basket-card-button" onclick="openRespMenu()"> Warenkorb </button>
+            </section>
+            <section class="overlay d_none" id="overlay">
+                <div class="dialog">
+                    <div onclick="closeBasket()" class="close-container">
+                        <div class="close-basket">Close</div>
+                    </div>
+                    <header class="basket-header"><h3>Warenkorb</h3></header>
+                    <section><h4>Bestellung: </h4></section>
+                    <div id="basketOrderResp"></div>
+
+                    <footer class="basket-footer">
+                            <p>Zwischensumme : <span id="subTotalResp">0,00 </span> €</p>
+                            <p>Lieferkosten : <span id="deliveryCostResp">5,00 </span> €</p> 
+                            <p class="totalPrice">Gesamtsumme : <span id="totalResp">0,00 </span> €</p>
+
+                    <button class="basket-button">Bestellen</button>
+                    </footer>
+                </div>
+            </section>
+            <section>
+            
         </section>
     
 

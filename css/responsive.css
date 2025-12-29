@@ -1,0 +1,37 @@
+.d_none {
+    display: none !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.755);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+.close-container {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.close-basket {
+    padding: 10px 15px;
+    background-color: #ffa500;
+}
+
+.dialog {
+    padding: 50px 0px;
+    border: 5px solid black;
+    background-color: #ffffff;
+}
+
+.overlay {
+    background-color: #837878cf;
+}

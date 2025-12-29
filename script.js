@@ -7,15 +7,23 @@ function renderMenu(){
     }
 }    
 
+
 function renderBasket(){
     let basketDishesRef = document.getElementById('basketOrder');
+    let basketDishesRespRef = document.getElementById('basketOrderResp');
+
     basketDishesRef.innerHTML = "";
+    basketDishesRespRef.innerHTML = "";
 
     for (let j = 0; j < basket.length; j++) {
-        basketDishesRef.innerHTML += getBasketTemplate(basket[j], j);
+        let template = getBasketTemplate(basket[j], j);
+        basketDishesRef.innerHTML += template;
+        basketDishesRespRef.innerHTML += template;
     }
+
     renderPrice();
 }
+
 
 function moveToBasket(index){
     let dish = dishes[index];
@@ -37,10 +45,12 @@ function moveToBasket(index){
          renderPrice();
     }
 
+
 function addToAmount(i){
     basket[i].amount++;
     renderBasket();
 }
+
 
 function removeFromAmount(i){
 
@@ -53,10 +63,12 @@ function removeFromAmount(i){
     renderBasket();
 }
 
+
 function deleteDish(i){
     basket.splice(i, 1);
     renderBasket();
 }
+
 
 function renderPrice(){
     let delivery = 5.00 
@@ -67,6 +79,21 @@ function renderPrice(){
     }
 
     document.getElementById('subTotal').innerHTML = subTotal.toFixed(2);
+     document.getElementById('subTotalResp').innerHTML = subTotal.toFixed(2);
     document.getElementById('deliveryCost').innerHTML = delivery.toFixed(2);
+    document.getElementById('deliveryCostResp').innerHTML = delivery.toFixed(2);
     document.getElementById('total').innerHTML = (subTotal + delivery).toFixed(2);
+    document.getElementById('totalResp').innerHTML = (subTotal + delivery).toFixed(2);
+}
+
+
+function openRespMenu(){
+    let overlayRef = document.getElementById('overlay');
+    overlayRef.classList.remove('d_none');
+}
+
+
+function closeBasket(){
+    let overlayRef = document.getElementById('overlay');
+    overlayRef.classList.add('d_none');
 }
