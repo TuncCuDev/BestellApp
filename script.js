@@ -97,3 +97,13 @@ function closeBasket(){
     let overlayRef = document.getElementById('overlay');
     overlayRef.classList.add('d_none');
 }
+
+function orderMyMenu(){
+    let basketMessageResp = document.getElementById('basketOrderResp');
+    let basketMessage = document.getElementById('basketOrder');
+
+    basket.splice(0, basket.length);
+
+    basketMessageResp.innerHTML = "Deine Bestellung wurde aufgenommen.";
+    basketMessage.innerHTML = "Deine Bestellung wurde aufgenommen.";
+    }

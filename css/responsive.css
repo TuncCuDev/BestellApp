@@ -23,7 +23,13 @@
 
 .close-basket {
     padding: 10px 15px;
-    background-color: #ffa500;
+    background-color: #ffa600d5;
+}
+
+.close-basket:hover {
+    cursor: pointer;
+    background-color: rgb(220, 168, 78);
+
 }
 
 .dialog {
@@ -64,8 +70,8 @@
     }
 
     h3{
-    margin-block-start: 10px;
-    margin-block-end: 10px;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
     }
 }
 
@@ -93,6 +99,7 @@
     .icon-resteraunt{
         width: 35px;
         height: 35px;
+        top: 60%;
     }
 }
 

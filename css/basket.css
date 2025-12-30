@@ -1,4 +1,4 @@
-.basket-button {
+.basket-button, .basket-button-resp {
     width: 285px;
     padding: 16px 32px;
     text-align: center;
@@ -13,11 +13,12 @@
     border: 2px solid #000000;
 }
 
-.basket-button:hover {
+.basket-button:hover, .basket-button-resp:hover {
     background-color: #860000;
     color: rgb(185, 23, 23);
     cursor: pointer;
 }
+
 
 .basket {
     width: 100%;
