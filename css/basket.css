@@ -22,7 +22,6 @@
 
 .basket {
     width: 100%;
-    height: 850px;
     position: sticky;
     top: 5px;
     border: 2px solid gray;
@@ -30,7 +29,6 @@
 
 .shopping-card {
     width: 300px;
-    flex-grow: 1;
     padding: 16px;
 }
 

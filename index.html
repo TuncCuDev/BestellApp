@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./css/standard.css">
     <link rel="stylesheet" href="./css/basket.css">
     <link rel="stylesheet" href="./css/responsive.css">
-
-  
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
 
 </head>
 <body onload="renderMenu()">
@@ -26,7 +27,6 @@
     </header>
 
     <main>
-       
         <section class="section-top">
             <img class="resteraunt-img" src="./img/vacation-2302009_1280.jpg" alt="Resteraunt-Foto">
 
@@ -42,24 +42,20 @@
         </section>
 
         <section class="centralPart">
-             
-            <div id="mainDishes"> </div>    
-
+            <div id="mainDishes"> </div>   
             <aside class="shopping-card">
-            <div class="basket">
+                <div class="basket">
                 <header class="basket-header"><h3>Warenkorb</h3></header>
                 <section><h4>Bestellung: </h4></section>
                 <div id="basketOrder"></div>
-
-                <footer class="basket-footer">
-                        <p>Zwischensumme : <span id="subTotal">0,00 </span> €</p>
-                        <p>Lieferkosten : <span id="deliveryCost">5,00 </span> €</p> 
-                        <p class="totalPrice">Gesamtsumme : <span id="total">0,00 </span> €</p>
-
-                <button class="basket-button" onclick="orderMyMenu()">Bestellen</button>
-                </footer>
-            </div>
-        </aside>
+                    <footer class="basket-footer">
+                            <p>Zwischensumme : <span id="subTotal">0,00 </span> €</p>
+                            <p>Lieferkosten : <span id="deliveryCost">5,00 </span> €</p> 
+                            <p class="totalPrice">Gesamtsumme : <span id="total">0,00 </span> €</p>
+                    <button class="basket-button" onclick="orderMyMenu()">Bestellen</button>
+                    </footer>
+                </div>
+            </aside>
         </section>
 
             <section class="resp-button">
@@ -83,17 +79,8 @@
                     </footer>
                 </div>
             </section>
-            <section>
-            
-        </section>
-    
-
-        
     </main>
 
-    <footer class="main-footer">Copyright Riva Ravi Resteraunt </footer>
-        <script src="./scripts/db.js"></script>
-    <script src="./scripts/templates.js"></script>
-    <script src="./script.js"></script>
+    <footer class="main-footer">Copyright Riva Ravi Resteraunt</footer>
 </body>
 </html>
