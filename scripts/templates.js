@@ -9,6 +9,7 @@ function getMainTemplate(dish, index){
             </section>`
 }
 
+
 function getBasketTemplate(dish, i){
     return `<section class="basketInfo">
             <div class="basket-Item-Name"><h3> ${dish.name}</h3> </div>
