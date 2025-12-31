@@ -17,7 +17,7 @@ function getBasketTemplate(dish, i){
             <div class="basket-amount-counter">
             <div class="basket-pls-button" onclick="addToAmount(${i})">+</div>
             <div class="basket-Item-Amount" id="amountNumber"> ${dish.amount} </div>
-            <div class="basket-mns-button" onclick="removeFromAmount(${i})">-</div>
+            <div class="basket-mns-button" onclick="reduceFromAmount(${i})">-</div>
             </div>
             <div class="basket-Item-Price" id="amountPrice"> ${(dish.price * dish.amount).toFixed(2)} €</div>
             <img src="./Favicon/mulleimer.png" class="delete-button" onclick="deleteDish(${i})" alt="Delete Button">

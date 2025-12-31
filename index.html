@@ -59,9 +59,11 @@
         </section>
 
             <section class="resp-button">
+                <div class="totalPriceReDe"> Gesamtsumme: <span id="totalReDe">0,00</span> €</div>
                 <button class="basket-card-button" onclick="openRespMenu()"> Warenkorb </button>
             </section>
-            <section class="overlay d_none" id="overlay">
+            
+            <dialog class="overlay d_none" id="overlay">
                 <div class="dialog">
                     <div onclick="closeBasket()" class="close-container">
                         <div class="close-basket">Close</div>
@@ -78,7 +80,7 @@
                     <button class="basket-button-resp" onclick="orderMyMenu()">Bestellen</button>
                     </footer>
                 </div>
-            </section>
+            </dialog>
     </main>
 
     <footer class="main-footer">Copyright Riva Ravi Resteraunt</footer>

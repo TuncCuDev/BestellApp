@@ -29,7 +29,6 @@ function moveToBasket(index){
     let dish = dishes[index];
 
     let sameDish = basket.find(item => item.name === dish.name)
-    // Prüft, ob das Item vorhanden ist/identisch ist?!
 
     if (sameDish){
         sameDish.amount++;
@@ -52,7 +51,7 @@ function addToAmount(i){
 }
 
 
-function removeFromAmount(i){
+function reduceFromAmount(i){
 
     if (basket[i].amount > 1){
     basket[i].amount--;
@@ -79,10 +78,11 @@ function renderPrice(){
     }
 
     document.getElementById('subTotal').innerHTML = subTotal.toFixed(2);
-     document.getElementById('subTotalResp').innerHTML = subTotal.toFixed(2);
+    document.getElementById('subTotalResp').innerHTML = subTotal.toFixed(2);
     document.getElementById('deliveryCost').innerHTML = delivery.toFixed(2);
     document.getElementById('deliveryCostResp').innerHTML = delivery.toFixed(2);
     document.getElementById('total').innerHTML = (subTotal + delivery).toFixed(2);
+    document.getElementById('totalReDe').innerHTML =(subTotal + delivery).toFixed(2);
     document.getElementById('totalResp').innerHTML = (subTotal + delivery).toFixed(2);
 }
 
@@ -90,12 +90,16 @@ function renderPrice(){
 function openRespMenu(){
     let overlayRef = document.getElementById('overlay');
     overlayRef.classList.remove('d_none');
+
+    document.body.classList.add('no-scroll');
 }
 
 
 function closeBasket(){
     let overlayRef = document.getElementById('overlay');
     overlayRef.classList.add('d_none');
+
+    document.body.classList.remove('no-scroll');
 }
 
 function orderMyMenu(){
